@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Involve-Bold';
+    src: url('../fonts/Involve-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve-BoldOblique';
+    src: url('../fonts/Involve-BoldOblique.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve-Medium';
+    src: url('../fonts/Involve-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve-MediumOblique';
+    src: url('../fonts/Involve-MediumOblique.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve-Oblique';
+    src: url('../fonts/Involve-Oblique.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve-Regular';
+    src: url('../fonts/Involve-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve-SemiBold';
+    src: url('../fonts/Involve-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve-SemiBoldOblique';
+    src: url('../fonts/Involve-SemiBoldOblique.ttf') format('truetype');
+}
