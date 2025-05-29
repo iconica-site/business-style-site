@@ -264,4 +264,42 @@
     .catalog-line-filter {
         padding: 0px 20px;
     }
+
+    .recomendation-slide {
+        max-width: 237px;
+    }
+    
+    .product-content-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pcg-left {
+        display: none;
+    }
+
+    .pcg-left-mobile {
+        width: 100%;
+        display: block;
+    }
+
+    .pcg-right {
+        padding: 19px;
+    }
+
+    .pcgr-head {
+        padding-top: 0px;
+    }
+
+    .product-recomendation {
+        padding: 19px;
+    }
+    .product-slider-mobile {
+        height: 100%;
+    }
+
+    .cmcg-block-sertificates {
+        flex: 0 0 94%;
+    }
+
 }
