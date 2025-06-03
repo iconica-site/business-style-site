@@ -245,7 +245,7 @@
         justify-content: center;
     }
     .product-wrapper {
-        max-width: 200px;
+        max-width: 165px;
     }
 
     .catalog-main-content-group {
@@ -301,5 +301,117 @@
     .cmcg-block-sertificates {
         flex: 0 0 94%;
     }
+
+    .history-of-shop-group {
+        flex-direction: column;
+    }
+    
+    .bwngc-block {
+        width: -webkit-fill-available;
+    }
+
+    .header-logo img {
+        width: 70%;
+    }
+
+    .blog-with-news-blog {
+        padding-top: 20px;
+    }
+
+    .hosg-left {
+        width: 100%;
+    }
+
+    .hosg-right {
+        width: auto;
+    }
+
+    .history-of-shop {
+        padding: 20px;
+    }
+
+    .otg-content {
+        flex-direction: column;
+    }
+
+    .our-team {
+        padding: 20px;
+    }
+    
+    .rpg-block {
+        width: -webkit-fill-available !important;
+        margin-right: 0px !important;
+    }
+
+    .rpg-head {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .reviews-partners {
+        padding: 20px;
+    }
+
+    .cug-group {
+        flex-direction: column;
+    }
+    .cug-left {
+        width: 100%;
+    }
+
+    .cugr-group {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .cug-right {
+        width: 100%;
+    }
+
+    .contact-us {
+        padding: 20px;
+    }
+
+    .question-or-sugg {
+        padding: 20px;
+    }
+
+    .qosg-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+        width: 50%;
+    }
+
+    .blog-detail-text {
+        padding: 20px;
+    }
+
+    .alg-sidebar {
+        display: none;
+    }
+
+    .alg-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .auth-lk {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .algc-head-zakazi {
+        display: block;
+    }
+    
+    .algcz-button {
+        padding-top: 30px;
+    }
+
+    .cmcg-block-favorites {
+        flex: 0 0 30%;
+    }
+
 
 }
