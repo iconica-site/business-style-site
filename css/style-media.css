@@ -413,5 +413,113 @@
         flex: 0 0 30%;
     }
 
+    .pbg-content {
+        width: 100%;
+    }
 
+    .pbgc-info-balls input {
+        width: 100%;
+    }
+
+    .pbgc-info-balls button {
+        width: 100%;
+    }
+
+    .pbgcb-product-block {
+        gap: 20px;
+    }
+
+    .pbgcb-product-block img {
+        max-width: 115px;
+    }
+
+    .pbgcbpbg-name p {
+        font-size: 14px;
+    }
+
+    .quantity-input {
+        width: 10px;
+        font-size: 12px;
+    }
+
+    .page-basket-group {
+        padding: 0px 20px;
+    }
+
+    .pbgcbpbg-color p {
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+    }
+
+    .quantity-label {
+        font-size: 12px;
+    }
+
+    .pbgcbpbg-kolvo-price p {
+        font-size: 16px;
+    }
+
+    .pbgcbpbg-color p {
+        font-size: 12px;
+    }
+
+    .pbgcbpbg-color span {
+        font-size: 12px;
+    }
+
+    .pbgcbpb-group p {
+        font-size: 12px;
+    }
+
+    .pbgcbpbg-name a {
+        font-size: 30px;
+    }
+
+    .pbgc-buttons a:first-child {
+        width: auto;
+    }
+
+    .pbgc-buttons a:last-child {
+        width: auto;
+    }
+
+    .pbgc-summ {
+        margin-top: 50px;
+    }
+
+    .pbgc-right {
+        width: auto;
+    }
+
+    .pbgc-left {
+        width: auto;
+    }
+
+    .pbg-content-order {
+        flex-direction: column-reverse;
+    }
+    
+    .pbg-oplata-del-back {
+        flex-direction: column;
+    }
+
+    .odv-sidebar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 27px;
+        border-top: 1px solid #00000033;
+        border-bottom: 1px solid #00000033;
+    }
+    
+    .odv-content {
+        width: 100%;
+    }
+
+    .page-404-button {
+        padding-bottom: 100px;
+    }
+
+    .politic-head h1 {
+        font-size: 31px;
+    }
 }

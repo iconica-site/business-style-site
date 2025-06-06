@@ -164,3 +164,49 @@ var GsgRightMobileSwiper = new Swiper('.swiper-gsg-right-mobile', {
     resistanceRatio: 0.8,
     loop: false,
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const quantityWrappers = document.querySelectorAll('.pbgcb-product-block');
+
+  function formatPrice(price) {
+    return price.toLocaleString('ru-RU') + ' ₽';
+  }
+
+  function updateTotal() {
+    let total = 0;
+    document.querySelectorAll('.pbgcb-product-block').forEach(block => {
+      const input = block.querySelector('.quantity-input');
+      const priceEl = block.querySelector('[data-price]');
+      const unitPrice = parseInt(priceEl.dataset.price);
+      const quantity = parseInt(input.value);
+      const productTotal = unitPrice * quantity;
+      priceEl.textContent = formatPrice(productTotal);
+      total += productTotal;
+    });
+
+    document.querySelector('.total-price').textContent = formatPrice(total);
+  }
+
+  quantityWrappers.forEach(block => {
+    const minusBtn = block.querySelector('.quantity-btn.minus');
+    const plusBtn = block.querySelector('.quantity-btn.plus');
+    const input = block.querySelector('.quantity-input');
+
+    minusBtn.addEventListener('click', () => {
+      let value = parseInt(input.value);
+      if (value > 1) {
+        input.value = value - 1;
+        updateTotal();
+      }
+    });
+
+    plusBtn.addEventListener('click', () => {
+      let value = parseInt(input.value);
+      input.value = value + 1;
+      updateTotal();
+    });
+  });
+
+  // Обновим сумму при загрузке
+  updateTotal();
+});
