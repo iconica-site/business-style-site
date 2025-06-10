@@ -1,4 +1,102 @@
+@media (max-width: 1600px) {
+    .header-buttons {
+        padding-right: 10px;
+    }
+
+    .header-nav {
+        padding-left: 20px;
+    }
+
+    .footer-menu {
+        padding: 50px 20px;
+    }
+    main {
+        padding: 0px 20px;
+    }
+
+    .mb-img {
+        padding: 0px 20px;
+    }
+}
+
 @media (max-width: 990px) {
+
+         /* Мобильное меню */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 96%;
+        background: white;
+        z-index: 10;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        pointer-events: none;
+        width: 91%;
+    }
+
+    .mobile-menu.active {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
+
+    .menu-top {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .menu-links {
+      margin-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .menu-links a {
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: #414141;
+    }
+
+    .menu-bottom span {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #414141;
+    }
+
+    .menu-bottom {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 16px;
+    }
+
+    .icon {
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .icon-close {
+        font-size: 45px;
+        /* font-weight: bold; */
+        margin-bottom: 2px;
+    }
+
     .header-nav {
         display: none;
     }
@@ -521,5 +619,25 @@
 
     .politic-head h1 {
         font-size: 31px;
+    }
+
+    .search-panel {
+        width: 90%;
+        max-width: none;
+        padding: 40px 20px;
+    }
+
+    .filt-search-buttons {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filt-search-buttons a {
+        padding: 20px 40px;
+    }
+
+    .filt-search-buttons a.active {
+        padding: 20px 40px;
     }
 }

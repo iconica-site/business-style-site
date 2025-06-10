@@ -102,18 +102,53 @@
 
     </header>
 
-    <main>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-top">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21 19" fill="none">
+                    <path d="M1.7666 7.02539C1.9051 8.70475 2.72896 10.411 4.06641 12.0859L4.36914 12.4541C5.81244 14.1618 7.7618 15.8137 9.99414 17.3438L9.86816 17.4268L10.1162 17.8408L10.1621 17.917C7.93484 16.4215 5.95663 14.7981 4.44727 13.1045L4.12402 12.7324C2.5745 10.8991 1.57101 8.96998 1.42188 7.02539H1.7666ZM20.377 7.02539C20.232 8.76354 19.348 10.5504 17.9785 12.2793L17.6709 12.6582C16.1251 14.5058 14.023 16.2986 11.6396 17.9131L11.6846 17.8389L11.9316 17.4248L11.8027 17.3408C13.8695 15.9098 15.6984 14.3506 17.1064 12.752L17.4248 12.3809C18.9369 10.5736 19.876 8.74787 20.0312 7.02539H20.377ZM15.5947 0.516602C18.252 0.727786 20.1919 2.96237 20.3828 6.02539H20.0391C19.8511 3.1862 18.066 1.12778 15.6006 0.916992L15.5947 0.516602ZM6.20215 0.922852C3.73319 1.16432 1.94972 3.1923 1.76172 6.02539H1.41797C1.60891 2.96552 3.54855 0.769982 6.20215 0.524414V0.922852ZM7.20215 0.52832C8.38171 0.648761 9.42136 1.19043 10.2402 2.01367C10.1646 2.11373 10.0911 2.21569 10.0205 2.32031C9.26097 1.55454 8.29835 1.04694 7.20215 0.927734V0.52832ZM14.6006 0.933594C13.5024 1.06384 12.5355 1.56224 11.7783 2.32031C11.7077 2.21628 11.6343 2.11453 11.5586 2.01465C12.3757 1.19837 13.4181 0.668083 14.5947 0.535156L14.6006 0.933594Z" fill="#414141" stroke="#414141"></path>
+                </svg>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M1.7979 7.81044C1.89661 6.59002 2.91584 5.6499 4.14025 5.6499H17.8559C19.0804 5.6499 20.0996 6.59002 20.1983 7.81044L21.088 18.8104C21.1987 20.1785 20.1182 21.3499 18.7457 21.3499H3.25054C1.87797 21.3499 0.797538 20.1785 0.908193 18.8104L1.7979 7.81044Z" stroke="#414141" stroke-width="1.3"></path>
+                    <path d="M14.998 5C14.998 3.93913 14.5766 2.92172 13.8264 2.17157C13.0763 1.42143 12.0589 1 10.998 1C9.93718 1 8.91977 1.42143 8.16962 2.17157C7.41948 2.92172 6.99805 3.93913 6.99805 5" stroke="#414141" stroke-width="1.3"></path>
+                </svg>
+            </div>
+            <div class="icon icon-close" id="closeMenu">×</div>
+        </div>
 
-        <div class="main-banner">  
-            <div class="mb-img" style="background-image: url('img/9b71445d8b54b0cf185b21717d554b9f3deb66a7.jpg');">
-                <div class="mb-buttons-showmore">
-                    <div class="mbbs-group">
-                        <a>Смотреть новинки</a>
-                        <div class="mbbs-border">
-                    </div>
+        <div class="menu-links">
+            <a href="#">Каталог</a>
+            <a href="#">Sale</a>
+            <a href="#">Сертификаты</a>
+            <a href="#">Магазины</a>
+        </div>
+
+        <div class="menu-bottom">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
+                    <path d="M10.0957 11C12.8571 11 15.0957 8.76142 15.0957 6C15.0957 3.23858 12.8571 1 10.0957 1C7.33428 1 5.0957 3.23858 5.0957 6C5.0957 8.76142 7.33428 11 10.0957 11Z" stroke="#414141" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19.0957 21C19.0957 16.5817 15.0663 13 10.0957 13C5.12514 13 1.0957 16.5817 1.0957 21" stroke="#414141" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <span>Войти</span>
+        </div>
+    </div>
+
+
+    <div class="main-banner">  
+        <div class="mb-img" style="background-image: url('img/9b71445d8b54b0cf185b21717d554b9f3deb66a7.jpg');">
+            <div class="mb-buttons-showmore">
+                <div class="mbbs-group">
+                    <a>Смотреть новинки</a>
+                    <div class="mbbs-border"></div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <main>
 
         <div class="main-popular-category">
             <div class="main-popular-category-group">
@@ -679,5 +714,22 @@
 
 
 <script src="js/script.js"></script>
+
+
+<script>
+  const burger = document.querySelector('.hnm-group-burg');
+  const menu = document.getElementById('mobileMenu');
+  const closeBtn = document.getElementById('closeMenu');
+
+  burger.addEventListener('click', () => {
+    menu.classList.add('active');
+    document.body.style.overflow = 'hidden'; // блокирует фон
+  });
+
+  closeBtn.addEventListener('click', () => {
+    menu.classList.remove('active');
+    document.body.style.overflow = ''; // восстанавливает прокрутку
+  });
+</script>
 
 </html>

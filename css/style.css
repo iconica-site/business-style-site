@@ -302,11 +302,13 @@ header {
 .bwng-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .bwngc-block {
     display: flex;
     flex-direction: column;
+    flex: 0 0 31%;
 }
 
 .bwngc-block p {
@@ -335,7 +337,7 @@ header {
 }
 
 .bwngc-block img {
-    max-width: 447px;
+    /* max-width: 447px; */
 }
 
 .bwng-button-show {
@@ -846,6 +848,7 @@ header {
     gap: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
+    justify-content: center;
 }
 
 .product-slider {
@@ -1224,6 +1227,7 @@ header {
     flex-wrap: wrap;
     gap: 35px;
     padding-bottom: 50px;
+    justify-content: center;
 }
 
 .history-of-shop {
@@ -1700,6 +1704,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .blog-detail-collimg-group img {
@@ -2316,6 +2322,7 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .pbgc-buttons a:last-child {
@@ -2332,6 +2339,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
+    white-space: nowrap;
 }
 
 .pbgc-buttons {
@@ -2917,3 +2925,180 @@ header {
     letter-spacing: 0%;
     color: #414141;
 }
+
+.mobile-menu {
+    display: none;
+}
+
+    /* Задний затемнённый фон */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+      z-index: 99;
+    }
+
+    .overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Боковая панель поиска */
+    .search-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      max-width: 620px;
+      height: 100%;
+      background: white;
+      padding: 40px 80px;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 100;
+    }
+
+    .s-h-group {
+        padding-bottom: 50px;
+    }
+
+    .search-panel.active {
+      transform: translateX(0);
+    }
+
+    .search-header span {
+        font-family: 'Involve-Regular';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .search-history li {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #888;
+
+    }
+
+    .search-history h4 {
+        font-family: 'Involve-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .search-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .search-header .close {
+      cursor: pointer;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .search-input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .search-input-group input {
+      flex: 1;
+      padding: 8px 12px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+    }
+
+    .search-input-group button {
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .search-history h4 {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #414141;
+      
+    }
+
+    .search-history ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-close {
+        display: flex;
+        justify-content: end;
+        font-size: 40px;
+    }
+
+    .search-group {
+        padding-top: 70px;
+    }
+
+    .filt-color {
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+    }
+
+    .sgi-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .sg-inputs {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .filt-search-buttons {
+        padding-top: 60px;
+    }
+    
+    .search-group h4 {
+        font-family: 'Involve-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #414141;
+    }
+
+    .sgi-group label {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #414141;
+    }

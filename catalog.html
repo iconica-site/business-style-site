@@ -34,7 +34,7 @@
                     <div class="hnm-burger"></div>
                     <div class="hnm-burger"></div>
                 </div>
-                <a>
+                <a id="openSearch">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                         <path d="M15.3397 3.0604C18.6201 6.34081 18.6201 11.6594 15.3397 14.9398C12.0593 18.2202 6.74071 18.2202 3.4603 14.9398C0.1799 11.6594 0.1799 6.34081 3.4603 3.0604C6.74071 -0.220002 12.0593 -0.220002 15.3397 3.0604Z" stroke="#414141" stroke-width="1.2"/>
                         <path d="M16.4004 16L19.9004 19.5" stroke="#414141" stroke-width="1.2"/>
@@ -47,7 +47,7 @@
             </div>
 
             <div class="header-buttons">
-                <a>
+                <a id="openSearch">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                         <path d="M15.3397 3.0604C18.6201 6.34081 18.6201 11.6594 15.3397 14.9398C12.0593 18.2202 6.74071 18.2202 3.4603 14.9398C0.1799 11.6594 0.1799 6.34081 3.4603 3.0604C6.74071 -0.220002 12.0593 -0.220002 15.3397 3.0604Z" stroke="#414141" stroke-width="1.2"/>
                         <path d="M16.4004 16L19.9004 19.5" stroke="#414141" stroke-width="1.2"/>
@@ -92,6 +92,194 @@
         </div>
 
     </header>
+
+    <div class="overlay" id="filt-overlay"></div>
+
+    <!-- Панель поиска -->
+    <div class="search-panel" id="filt-searchPanel">
+        <div class="search-close">
+            <span class="close" id="filt-closeSearch">×</span>
+        </div>
+        <div class="search-group">
+            <h4>Цвет</h4>
+            <div class="sg-inputs">
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                </div>
+
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <div class="filt-color"></div>
+                        <label> Белый </label>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Размер</h4>
+            <div class="sg-inputs">
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 30 </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 31 </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 32 </label>
+                    </div>
+                </div>
+
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 33 </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 34 </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 35 </label>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Материал</h4>
+            <div class="sg-inputs">
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> Хлопок </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> Лен </label>
+                    </div>
+                </div>
+
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> Вискоза </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> Шёлк </label>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Цена</h4>
+            <div class="sg-inputs">
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 0 - 2500 </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 2500 - 5000 </label>
+                    </div>
+                </div>
+
+                <div class="sgi-row">
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> 5000 - 10000 </label>
+                    </div>
+                    <div class="sgi-group">
+                        <input type="checkbox">
+                        <label> >10000 </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="algcz-button filt-search-buttons">
+                <a class="">Очистить</a>
+                <a class="active">Применить</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Панель поиска -->
+    <div class="search-panel" id="searchPanel">
+        <div class="search-close">
+            <span class="close" id="closeSearch">×</span>
+        </div>
+        <div class="search-group">
+            <div class="s-h-group">
+                <div class="search-header">
+                    <span>Поиск</span>
+                </div>
+
+                <div class="search-input-group">
+                    <input type="text" placeholder="Введите название">
+                    <button>Искать</button>
+                </div>
+            </div>
+
+            <div class="search-history">
+                <h4>Ранее искали:</h4>
+                <ul>
+                    <li>Двубортный тренч макси с поясом</li>
+                    <li>Укороченная куртка из экозамши с застёжкой</li>
+                    <li>Свободные костюмные брюки с ремнём</li>
+                    <li>Трикотажный топ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <main>
 
@@ -161,7 +349,7 @@
                 </div>
 
                 <div class="crsg-filters">
-                    <a>Фильтры</a>
+                    <a id="filt-openSearch">Фильтры</a>
                 </div>
 
                 <div class="crsg-sort">
@@ -521,6 +709,53 @@
         },
         slidesPerView: 1,
     });
+</script>
+
+<script>
+    const openBtn = document.getElementById('openSearch');
+    const closeBtn = document.getElementById('closeSearch');
+    const searchPanel = document.getElementById('searchPanel');
+    const overlay = document.getElementById('overlay');
+    const openBtnFilt = document.getElementById('filt-openSearch');
+    const closeBtnFilt = document.getElementById('filt-closeSearch');
+    const searchPanelFilt = document.getElementById('filt-searchPanel');
+    const overlayFilt = document.getElementById('filt-overlay');
+
+    openBtn.onclick = () => {
+        searchPanel.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    closeBtn.onclick = () => {
+        searchPanel.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    overlay.onclick = () => {
+        searchPanel.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    openBtnFilt.onclick = () => {
+        searchPanelFilt.classList.add('active');
+        overlayFilt.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    closeBtnFilt.onclick = () => {
+        searchPanelFilt.classList.remove('active');
+        overlayFilt.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    overlayFilt.onclick = () => {
+        searchPanelFilt.classList.remove('active');
+        overlayFilt.classList.remove('active');
+        document.body.style.overflow = '';
+    };
 </script>
 
 
